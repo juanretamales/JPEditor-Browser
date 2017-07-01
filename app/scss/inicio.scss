@@ -1,7 +1,42 @@
-$font-stack:    Helvetica, sans-serif;
+$font-stack: Helvetica, sans-serif;
 $primary-color: #333;
 
-body {
-  font: 100% $font-stack;
-  color: $primary-color;
+$edit-line: gray;
+
+body
+{
+    font: 100% $font-stack;
+    color: $primary-color;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 100px auto;
+}
+
+
+[contenteditable=true]
+{
+    //display: grid;
+    //border: dotted 1px $edit-line;
+    //background: red;
+}
+.editor
+{
+    h1,a
+    {
+        margin: 1px;
+        &:hover{
+            border: dotted 1px red;
+            border-style: dashed dotted;
+            margin: 0px;
+        }
+    }
+    div,section,p,blockquote
+    {
+        border: dotted 1px $edit-line;
+        margin: 0px;
+        &:hover
+        {
+            border: dotted 1px red;
+        }
+    }
 }

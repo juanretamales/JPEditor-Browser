@@ -10,10 +10,10 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 # Clone this repository
 $ git clone https://github.com/juanretamales/JPEditor-Browser.git
 # Go into the repository
-$ cd JPEditor-Browser/app
+$ cd JPEditor-Browser
 # Install dependencies
 $ npm install
-# Run the app for compile and run
+# Run the app for compile and run in your favorite browser
 $ gulp
 ```
 
